@@ -1,3 +1,46 @@
+# Project installation
+## Install Dependencies
+
+Run Composer to install PHP dependencies:
+```
+composer install
+```
+
+Install front-end dependencies using npm:
+```
+npm install
+```
+
+Create `.env` file in the project root by copying `.env.example`, and update it with the appropriate values for your environment
+
+Generate laravel app key
+```
+php artisan key:generate
+```
+
+Set Up Redis for Faster Performance by setting REDIS_CLIENT and other variables like REDIS_HOST, REDIS_PORT in `.env`
+```
+REDIS_CLIENT=predis
+```
+
+## Running the Application
+
+After setting up everything, you can run the application locally using the built-in PHP development server:
+```
+composer run dev
+```
+
+Run the Laravel Reverb Websocket server:
+```
+php artisan reverb:start
+```
+
+Run scheduler:
+```
+php artisan schedule:work
+```
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
