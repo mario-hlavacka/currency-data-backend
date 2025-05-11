@@ -6,11 +6,6 @@ Run Composer to install PHP dependencies:
 composer install
 ```
 
-Install front-end dependencies using npm:
-```
-npm install
-```
-
 Create `.env` file in the project root by copying `.env.example`, and update it with the appropriate values for your environment
 
 Generate laravel app key
